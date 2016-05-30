@@ -24,7 +24,7 @@ class Entry extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $category;
 
     /**
-     * @var string
+     * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      */
     protected $image;
 
@@ -80,16 +80,16 @@ class Entry extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * @param string $image
+     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
      * @return void
      */
-    public function setImage($image)
+    public function setImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image = null)
     {
         $this->image = $image;
     }
 
     /**
-     * @return string
+     * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference
      */
     public function getImage()
     {
