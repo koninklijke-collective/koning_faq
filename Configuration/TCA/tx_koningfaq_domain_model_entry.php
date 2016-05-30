@@ -31,7 +31,7 @@ return array(
     ),
     'types' => array(
         0 => array(
-            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, question, answer, category, image,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'
+            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, question, answer, category, image,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,--palette--;;access'
         )
     ),
     'palettes' => array(

@@ -5,9 +5,9 @@ if (!defined('TYPO3_MODE')) {
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
     'koning_faq',
-    'Faq',
+    'Display',
     'LLL:EXT:koning_faq/Resources/Private/Language/locallang_be.xlf:plugin.title'
 );
 
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['koningfaq_faq'] = 'pi_flexform';
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue('koningfaq_faq', 'FILE:EXT:koning_faq/Configuration/FlexForm/Faq.xml');
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['koningfaq_display'] = 'pi_flexform';
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue('koningfaq_display', 'FILE:EXT:koning_faq/Configuration/FlexForm/Display.xml');

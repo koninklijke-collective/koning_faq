@@ -15,14 +15,13 @@ class CategoryRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 
     /**
      * @param array $uidList
-     * @return array
+     * @return \TYPO3\CMS\Extbase\Persistence\QueryResultInterface
      */
     public function findByUidList(array $uidList)
     {
-        $return = array();
-        foreach ($uidList as $uid) {
-            $return[] = $this->findByUid($uid);
-        }
-        return $return;
+        $query = $this->createQuery();
+        $constraints = [];
+        $constraints[] = $query->in('uid', $uidList);
+        return $query->matching($query->logicalAnd($constraints))->execute();
     }
 }
