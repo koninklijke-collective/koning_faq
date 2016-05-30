@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="en" target-language="nl" datatype="plaintext" original="messages" date="2012-10-17T19:30:32Z"
+          product-name="koning_faq">
+        <header/>
+        <body>
+            <trans-unit id="faq.list.all_categories">
+                <target>Alle rubrieken</target>
+            </trans-unit>
+            <trans-unit id="faq.list.submit">
+                <target>Zoeken</target>
+            </trans-unit>
+            <trans-unit id="faq.list.search_in">
+                <target>Zoeken in:</target>
+            </trans-unit>
+            <trans-unit id="faq.list.show_all_questions">
+                <target>Toon alle vragen</target>
+            </trans-unit>
+            <trans-unit id="faq.list.show_top5_questions">
+                <target>Toon top 5 vragen</target>
+            </trans-unit>
+            <trans-unit id="faq.list.reset">
+                <target>Start overnieuw</target>
+            </trans-unit>
+            <trans-unit id="faq.list.no_results">
+                <target>Helaas zijn er geen resultaten gevonden voor je zoekopdracht.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,11 @@
+<f:layout name="Default" />
+
+<f:section name="Content">
+    <f:if condition="{entries}">
+        <f:then>
+            <f:for each="{entries}" as="entry" iteration="i">
+                <f:render partial="CategoryList" arguments="{hideCategoryTitle: hideCategoryTitle, category: entry, iteration: i, totalRecords: '{entry.entries -> f:count()}'}" />
+            </f:for>
+        </f:then>
+    </f:if>
+</f:section>

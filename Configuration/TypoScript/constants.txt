@@ -1,0 +1,10 @@
+plugin.tx_koningfaq {
+    view {
+        templateRootPath = EXT:koning_faq/Resources/Private/Templates
+        partialRootPath = EXT:koning_faq/Resources/Private/Partials
+        layoutRootPath = EXT:koning_faq/Resources/Private/Layouts
+    }
+    persistence {
+        storagePid =
+    }
+}
