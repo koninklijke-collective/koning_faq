@@ -1,0 +1,25 @@
+<f:if condition="{hideCategoryTitle}">
+    <f:else><h2 class="text-center">{category.category.title}</h2></f:else>
+</f:if>
+<div class="accordion">
+    <f:for each="{category.entries}" as="entry" iteration="j">
+        <h3>{entry.question} <i class="fa fa-plus-circle pull-right hidden-xs"></i></h3>
+        <div class="content">
+            <div class="row">
+                <f:if condition="{entry.image}">
+                    <f:then>
+                        <div class="col-sm-3 col-md-3">
+                            <img class="img-responsive" src="uploads/tx_faq/{entry.image}" alt="">
+                        </div>
+                        <div class="col-sm-9 col-md-9">
+                            <f:format.html>{entry.answer}</f:format.html>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <f:format.html>{entry.answer}</f:format.html>
+                    </f:else>
+                </f:if>
+            </div>
+        </div>
+    </f:for>
+</div>
