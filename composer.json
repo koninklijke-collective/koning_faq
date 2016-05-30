@@ -1,0 +1,29 @@
+{
+  "name": "koninklijke-collective/koning_faq",
+  "description": "TYPO3 Extension: Basic FAQ functionality",
+  "type": "typo3-cms-extension",
+
+  "keywords": [
+    "TYPO3",
+    "CMS",
+    "FAQ"
+  ],
+  "homepage": "https://github.com/koninklijke-collective/koning_faq",
+  "license": "LGPL-3.0+",
+
+  "autoload": {
+    "psr-4": {
+      "Keizer\\KoningFaq\\": "Classes/"
+    }
+  },
+
+  "version": "1.0.0",
+
+  "authors": [
+    {
+      "name": "Jesper Paardekooper",
+      "email": "jesper@koninklijk.io",
+      "homepage": "https://www.grandslam-media.nl"
+    }
+  ]
+}
