@@ -39,14 +39,14 @@ class FaqController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             }
             $entries = $this->entryRepository->search($categories, $searchQuery);
         } elseif (strlen($this->settings['categories']) > 0) {
-            $categories = $this->categoryRepository->findByUidList(explode(',', $this->settings['categories']));
+            $categories = $this->categoryRepository->findByUidList(explode(',', $this->settings['categories']))->toArray();
             if ($category !== null) {
                 $categories = array($category);
             }
             $entries = $this->entryRepository->search($categories, $searchQuery);
         }
         $categories = array_merge([
-            '' => \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('faq.list.all_categories', 'faq')
+            '' => \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('faq.list.all_categories', 'koning_faq')
         ], $categories);
 
         $this->view->assignMultiple([
